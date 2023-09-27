@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: flex;
+    height: 98vh;
+    padding: 6px;
+    background-color: #9fd4c2
+}
+
+.logo{
+    width: 50%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.loginSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.form{
+    width: 56%;
+    padding: 24px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form .heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    border-radius: 4px;
+    border: 1px solid silver;
+    height: 44px;
+    font-size: 18px;
+    padding-left: 12px;
+    outline: none;
+}
+
+input[type='submit']{
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid silver;
+}
+
+.underline{
+    margin-top: 18px;
+    border: 1px solid silver;
+}
+
+a{
+    text-decoration: none;
+}
+
+a.AccountCreation{
+    display: block;
+    margin-top: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+a.AccountCreation:hover{
+    text-decoration: underline rgb(88, 72, 186);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 42px;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.facebookBtn:hover{
+    color: rgb(33, 103, 196);
+    background-color: rgba(0, 255, 0, 0.1);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.googleBtn:hover{
+    cursor: pointer;
+    color: green;
+    background-color: rgba(0, 255, 0, 0.1);
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 850px) {
+    #container .logo{
+        display: none;
+    }
+    #container .loginSection{
+        width: 100%;
+    }
+    #container .loginSection .form{
+        width: 75%;
+    }
+}
